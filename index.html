@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Elite Cuts</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Elite Cuts</h1>
+  <p>Book your next cut in seconds.</p>
+
+  <h2>Services</h2>
+  <ul>
+    <li>Haircut - $30</li>
+    <li>Beard - $15</li>
+    <li>Combo - $40</li>
+  </ul>
+
+  <h2>Book Appointment</h2>
+  <h3>Select a Day</h3>
+
+    <div id="calendar"></div>
+
+    <p id="selected-date">No date selected</p>
+
+  <label>Choose Service:</label>
+  <select id="service">
+    <option>Haircut</option>
+    <option>Beard</option>
+    <option>Combo</option>
+  </select>
+
+  <br><br>
+
+  <label>Select Date:</label>
+
+
+  <h3>Pick a Time</h3>
+
+  <div id="time-slots">
+    <button class="time-btn" onclick="selectTime(this)">10:00 AM</button>
+    <button class="time-btn" onclick="selectTime(this)">11:00 AM</button>
+    <button class="time-btn" onclick="selectTime(this)">12:00 PM</button>
+    </div>
+  </div>
+
+  <p id="selected-time">No time selected</p>
+
+  <h3>Your Info</h3>
+  <input type="text" id="name" placeholder="Your Name">
+  <input type="text" id="phone" placeholder="Phone Number">
+
+  <br><br>
+
+  <button onclick="submitBooking()">Confirm Booking</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
