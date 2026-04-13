@@ -1,95 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 body {
-  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
-  color: #f5f5f5;
-  font-family: Arial, sans-serif;
-  text-align: center;
   margin: 0;
-  padding: 20px;
-}
-
-h1 {
- font-family: 'Poppins', sans-serif;
-  font-size: 42px;
-  font-weight: 700;
-  color: #00ff88;
-  letter-spacing: 1px;
-  margin-bottom: 5px;
-}
-
-p {
-  opacity: 0.8;
-}
-
-h2, h3 {
-  margin-top: 30px;
-  color: #ffffff;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  background: #222;
-  margin: 8px auto;
-  padding: 12px;
-  max-width: 300px;
-  border-radius: 10px;
-  border: 1px solid #333;
-}
-
-input, select {
-  padding: 12px;
-  margin: 8px;
-  border-radius: 10px;
-  border: none;
-  width: 220px;
-  outline: none;
-  background: #222;
+  font-family: 'Poppins', sans-serif;
+  background: #0f0f0f;
   color: white;
+  text-align: center;
 }
 
-button {
-  padding: 12px 18px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 10px;
-  background: #00ff88;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.2s;
+.hero {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
 }
 
-button:hover {
-  transform: scale(1.05);
-  background: #00cc6a;
+.hero h1 {
+  color: #00ff88;
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  opacity: 0.7;
+}
+
+.section {
+  padding: 40px 20px;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  min-width: 120px;
 }
 
 #calendar {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 8px;
+  gap: 6px;
   max-width: 360px;
   margin: 20px auto;
 }
 
 .day {
-  background: #222;
-  padding: 12px;
+  background: #1a1a1a;
+  padding: 10px;
   border-radius: 10px;
   cursor: pointer;
+  font-size: 11px;
   border: 1px solid #333;
-  transition: 0.2s;
-  font-size: 12px;
-}
-
-.day:hover {
-  transform: scale(1.05);
-  background: #333;
 }
 
 .day.active {
@@ -99,59 +66,40 @@ button:hover {
 }
 
 .time-btn {
-  padding: 10px 14px;
-  margin: 6px;
-  border: none;
-  border-radius: 10px;
-  background: #222;
-  color: white;
-  cursor: pointer;
-  transition: 0.2s;
+  background: #1a1a1a;
   border: 1px solid #333;
-}
-
-.time-btn:hover {
-  background: #333;
-  transform: scale(1.05);
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .time-btn.active {
   background: #00ff88;
   color: black;
-  font-weight: bold;
 }
 
-#selected-date,
-#selected-time {
-  margin-top: 10px;
-  font-size: 14px;
-  opacity: 0.8;
-}
-
-select {
-  padding: 12px 14px;
+input, select {
+  padding: 12px;
   margin: 8px;
-  border-radius: 12px;
+  border-radius: 10px;
   border: 1px solid #333;
-  width: 220px;
-  outline: none;
-  background: #222;
+  background: #1a1a1a;
   color: white;
-  font-size: 14px;
+  width: 220px;
+}
+
+.confirm-btn {
+  background: #00ff88;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
   cursor: pointer;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  transition: 0.2s;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  margin-top: 15px;
 }
 
-select:hover {
-  background: #2a2a2a;
-  transform: translateY(-1px);
-}
-
-select:focus {
-  border-color: #00ff88;
-  box-shadow: 0 0 0 3px rgba(0, 255, 136, 0.15);
+.confirm-btn:hover {
+  background: #00cc6a;
 }

@@ -2,12 +2,10 @@ let selectedTime = null;
 let selectedDate = null;
 
 function selectTime(button) {
-  const buttons = document.querySelectorAll(".time-btn");
-
-  buttons.forEach(btn => btn.classList.remove("active"));
+  document.querySelectorAll(".time-btn")
+    .forEach(btn => btn.classList.remove("active"));
 
   button.classList.add("active");
-
   selectedTime = button.innerText;
 
   document.getElementById("selected-time").innerText =
@@ -15,12 +13,10 @@ function selectTime(button) {
 }
 
 function selectDate(element, date) {
-  const days = document.querySelectorAll(".day");
-
-  days.forEach(d => d.classList.remove("active"));
+  document.querySelectorAll(".day")
+    .forEach(d => d.classList.remove("active"));
 
   element.classList.add("active");
-
   selectedDate = date;
 
   document.getElementById("selected-date").innerText =
@@ -29,8 +25,8 @@ function selectDate(element, date) {
 
 function loadCalendar() {
   const calendar = document.getElementById("calendar");
-
   calendar.innerHTML = "";
+
   for (let i = 0; i < 14; i++) {
     const date = new Date();
     date.setDate(date.getDate() + i);
@@ -53,23 +49,12 @@ function submitBooking() {
   const phone = document.getElementById("phone").value.trim();
   const service = document.getElementById("service").value;
 
-  if (!selectedDate) {
-    alert("Please select a date");
-    return;
-  }
-
-  if (!selectedTime) {
-    alert("Please select a time");
-    return;
-  }
-
-  if (!name || !phone) {
-    alert("Please fill in your details");
-    return;
-  }
+  if (!selectedDate) return alert("Select a date");
+  if (!selectedTime) return alert("Select a time");
+  if (!name || !phone) return alert("Fill in your details");
 
   alert(
-    "Booking Confirmed!\n\n" +
+    "BOOKING CONFIRMED\n\n" +
     "Name: " + name + "\n" +
     "Phone: " + phone + "\n" +
     "Service: " + service + "\n" +
