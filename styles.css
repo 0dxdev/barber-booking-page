@@ -8,6 +8,14 @@ body {
   text-align: center;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #0f0f0f;
+}
+
 .hero {
   padding: 60px 20px;
   background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
