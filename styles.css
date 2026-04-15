@@ -9,6 +9,13 @@ body {
   text-align: center;
 }
 
+/* HEADER */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 /* NAVBAR */
 .navbar {
   display: flex;
@@ -18,17 +25,23 @@ body {
   background-color: #202020;
 }
 
+/* LOGO */
+.logo {
+  font-size: 22px;
+  color: #00ff88;
+}
+
 /* NAV-LINKS */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 30px;
-  color: white;
+  gap: 25px;
 }
 
 .nav-links a {
   text-decoration: none;
   color: white;
+  font-size: 15px;
 }
 
 /* HERO */
