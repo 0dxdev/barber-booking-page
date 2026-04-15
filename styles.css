@@ -6,7 +6,6 @@ body {
   font-family: 'Poppins', sans-serif;
   background: #0f0f0f;
   color: white;
-  text-align: center;
 }
 
 /* HEADER */
@@ -29,6 +28,7 @@ body {
 .logo {
   font-size: 22px;
   color: #00ff88;
+  letter-spacing: 2px;
 }
 
 /* NAV-LINKS */
@@ -40,32 +40,58 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: white;
+  color: #ccc;
   font-size: 15px;
+  transition: 0.3s;
 }
 
+.nav-links a:hover {
+  color: white;
+}
+
+.book-btn {
+  background-color:#00ff88;
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: black !important;
+}
+
+
 /* HERO */
-.hero h1 {
+.hero {
+  background:
+    url ("images/barber-2.jpg")
+}
+
+.hero-content {
+  max-width: 600px;
+  padding-left: 40px;
+}
+
+.hero-content h1 {
   color: #00ff88;
   font-size: 44px;
   margin-bottom: 10px;
 }
 
-.hero p {
+.hero-content p {
+  font-size: 18px;
   opacity: 0.7;
 }
 
 .btn {
-  color: white;
+  color: rgb(28, 28, 28);
   text-decoration: none;
-  background-color: rgb(75, 75, 75);
+  background-color: #00ff88;
   border-radius: 4px;
   padding: 8px 30px;
+  font-weight: 600;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  background-color: #292929;
+  background-color: #00cc6a;
 }
 
 /* SECTION */
