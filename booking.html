@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Elite Cuts</title>
-  <meta name="description" content="width-device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  
+
+<!--NAVBAR-->
 <header>
   <nav class="navbar">
     <h1 class="logo">Elite Cuts</h1>
@@ -16,16 +17,20 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="booking.html">Book</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
   </header>
 
+<!--SECTION-->
 <section class="section">
     <h2>Book Appointment</h2>
 
     <p id="selected-date">No date selected</p>
     <div id="calendar"></div>
 
+<!--SERVICE-->
     <label>Choose Service</label>
     <select id="service">
       <option>Haircut</option>
@@ -33,6 +38,7 @@
       <option>Combo</option>
     </select>
 
+<!--TIME-->
     <h3>Pick a Time</h3>
     <div id="time-slots">
       <button class="time-btn" onclick="selectTime(this)">10:00 AM</button>
@@ -42,9 +48,11 @@
 
     <p id="selected-time">No time selected</p>
 
+<!--INFO-->
     <h3>Your Info</h3>
     <input type="text" id="name" placeholder="Your Name">
     <input type="text" id="phone" placeholder="Phone Number">
 
+<!--SUMBIT BUTTON-->
     <button class="confirm-btn" onclick="submitBooking()">Confirm Booking</button>
   </section>
