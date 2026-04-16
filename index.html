@@ -16,9 +16,9 @@
   <h1 class="logo">Elite Cuts</h1>
     
   <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
     <li><a href="booking.html" class="book-btn">Book</a></li>
   </ul>
   
@@ -26,10 +26,11 @@
   </header>
 
   <!--HERO-->
-  <section class="hero">
+  <section id="home" class="hero">
     <div class="hero-content">
-    <h1>Elite Cuts</h1>
-    <p>Fresh cuts. Clean look. Book instantly.</p>
+      <h1>Elite Cuts</h1>
+      <p>Fresh cuts. Clean look. Book instantly.</p>
+    <a href="services.html" class="btn">Services</a>
     <a href="booking.html" class="btn">Book Now</a>
     </div>
   </section>
@@ -37,11 +38,51 @@
 
 
   <!--SECTION-->
-  <section class="section">
-    <h2>Why Choose Elite Cuts?</h2>
-    <p>Professional service, clean environment, and consistent results every visit.</p>
-  </section>
+ <section id="services" class="section services-section">
+  <div class="container">
     
+    <h2 class="section-title">Services</h2>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Haircut</h3>
+        <p>Clean, sharp cuts tailored to your style.</p>
+        <span class="price">$20</span>
+      </div>
+
+      <div class="service-card">
+        <h3>Fade</h3>
+        <p>Skin fades, low fades, mid fades done right.</p>
+        <span class="price">$25</span>
+      </div>
+
+      <div class="service-card">
+        <h3>Beard Trim</h3>
+        <p>Shape and clean your beard professionally.</p>
+        <span class="price">$15</span>
+      </div>
+    </div>
+  </div>
+</section>
+  
+  <section id="contact" class="section">
+    <div class="container">
+    
+      <h2 class="section-title">Contact</h2>
+       <p class="contact-subtext">Book an appointment or reach out anytime.</p>
+      
+       <div class="contact-card">
+      
+        <a href="https://instagram.com" target="_blank" class="contact-link">Instagram</a>
+
+        <a href="mailto:youremail@gmail.com" target="_blank" class="contact-link">Email</a>
+
+        <a href="tel:1234567890" class="contact-link">Call</a>
+
+      </div>
+    
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>
