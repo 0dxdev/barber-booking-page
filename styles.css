@@ -42,6 +42,7 @@ body {
   text-decoration: none;
   color: #ccc;
   font-size: 15px;
+  position: relative;
   transition: 0.3s;
 }
 
@@ -111,7 +112,8 @@ body {
 
 /* SECTION */
 .section {
-  padding: 80px 0;
+  padding: 80px 20px;
+  text-align: center;
 }
 
 .section-title {
@@ -176,15 +178,15 @@ body {
 
 .contact-card {
   max-width: 400px;
-  margin: 0 auto;
+  margin: 100px auto;
   background: #1a1a1a;
   border: 1px solid #333;
   border-radius: 12px;
-  padding: 20px;
+  padding: 30px;
 
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
 }
 
 .contact-link {
@@ -209,6 +211,20 @@ body {
   gap: 6px;
   max-width: 360px;
   margin: 20px auto;
+}
+
+.days-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  max-width: 360px;
+  margin: 20px auto 5px auto;
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.days-header div {
+  padding: 5px 0;
 }
 
 .day {
@@ -248,7 +264,8 @@ input {
   border: 1px solid #333;
   background: #1a1a1a;
   color: white;
-  width: 220px;
+  width: 100%;
+  max-width: 300px;
 }
 
 .confirm-btn {
@@ -265,9 +282,37 @@ input {
   background: #00cc6a;
 }
 
+/* EXTRA */
+.time-btn,
+.day,
+.confirm-btn {
+  transition: all 0.25s ease;
+}
+
+.day:hover,
+.time-btn:hover {
+  border-color: #00ff88;
+  transform: translateY(-2px);
+}
+
+.day.active,
+.time-btn.active {
+  background: #00ff88;
+  color: black;
+  font-weight: bold;
+  box-shadow: 0 0 10px #00ff88;
+}
+
 /* MEDIA RESPONSIVENESS */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     padding: 15px 20px;
   }
+
+  @media (max-width: 500px) {
+  .contact-card {
+    margin: 20px;
+    padding: 20px;
+  }
+}
